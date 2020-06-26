@@ -66,5 +66,51 @@ body {
 
 .ex-7-img:hover {
     filter: sepia(.5) grayscale(.3);
+}
 
+/* es 8 */
+/* ******************************************** */
+/* DIFFERENTI TIMING TRANSITION SULLA STESSA RIGA
+SEPARATI DA VIRGOLA, SENNO' NON VANNO!!!*/
+/* ******************************************** */
+.ex-8-img {
+    transition: border-radius .5s ease-out, filter .5s ease-out;
+}
+
+.ex-8-img:hover {
+    filter: sepia(.4) grayscale(.4);
+    border-radius: 20px;
+}
+
+/* es 9 */
+.ex-9-img {
+    transition: filter 1s ease-out, border-radius 1s ease-out, transform 1.8s linear;
+}
+
+.ex-9-img:hover {
+    filter: saturate(.4) opacity(.4);
+    border-radius: 30px;
+    transform: scale(1.5);
+}
+
+/* ANIMATION */
+/* es 10 */
+.ex-10-icon {
+    animation: rotazione 4s linear infinite;
+}
+
+@keyframes rotazione {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* es 11 */
+.ex-11-icon:hover {
+    animation: mezzaRotazione 2s linear;
+}
+
+@keyframes mezzaRotazione {
+    0% {transform: rotate(0deg);}
+    90% {transform: rotate(270deg);}
+    100% {transform: rotate(0deg);}
 }
