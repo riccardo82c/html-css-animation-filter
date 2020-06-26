@@ -114,3 +114,25 @@ SEPARATI DA VIRGOLA, SENNO' NON VANNO!!!*/
     90% {transform: rotate(270deg);}
     100% {transform: rotate(0deg);}
 }
+
+/* es 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation: spostamento1 2s linear infinite;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: spostamento2 2s linear infinite;
+}
+
+@keyframes spostamento1 {
+    0% {left: 10%;}
+    50% {left: calc(100% - 57px);}
+    100% {left: 10%;}
+}
+
+
+@keyframes spostamento2 {
+    0% {right: 20%;}
+    50% {right: calc(100% - 57px);}
+    100% {right: 20%;}
+}
