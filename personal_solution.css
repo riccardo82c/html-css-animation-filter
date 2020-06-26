@@ -117,11 +117,11 @@ SEPARATI DA VIRGOLA, SENNO' NON VANNO!!!*/
 
 /* es 12 */
 .ex-12-button:hover .ex-12-top-white{
-    animation: spostamento1 2s linear infinite;
+    animation: spostamento1 2s linear;
 }
 
 .ex-12-button:hover .ex-12-bottom-white{
-    animation: spostamento2 2s linear infinite;
+    animation: spostamento2 2s linear;
 }
 
 @keyframes spostamento1 {
@@ -136,3 +136,33 @@ SEPARATI DA VIRGOLA, SENNO' NON VANNO!!!*/
     50% {right: calc(100% - 57px);}
     100% {right: 20%;}
 }
+
+/* es 13 */
+
+.ex-13-top-white {
+    /* background-color: grey; */
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: turnover1 8s ease-in-out infinite;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: turnover2 2s linear infinite;
+}
+
+@keyframes turnover1 {
+    0% {left: 10%; top: -10px;}
+    35.5% {left: calc(100% - 30px); top: -10px;}
+    49% {left: calc(100% - 30px); top: calc(100% - 10px);}
+    85.5% {left: -30px; top: calc(100% - 10px);}
+    95% {left: -30px; top: -10px;}
+    100% {left: 10%; top: -10px;}
+}
+
+
+/* @keyframes turnover2 {
+    0% {right: 20%;}
+    50% {right: calc(100% - 57px);}
+    100% {right: 20%;}
+} */
